@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoz-app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <div class="innerContainer main">
+        <div class="header ">
+            <h1 class="Logo">Swift-check</h1>
+            <p class="daily-Quote" id="dailyQuote"></p>
+            <div class="Input">
+                <div>
+                    <input type="text" id="text-input-field" type="button"
+                        placeholder="What do you have planned today?">
+                    <input type="hidden" id="Index" />
+                    <button id="addBtn" class="createBtn">
+                        Create
+                    </button>
+                </div>
+                <ul id="todos-container" class="innerContainer">
+                    <li class="ball">apple</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
