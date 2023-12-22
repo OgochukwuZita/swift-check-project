@@ -26,7 +26,7 @@ body{
     justify-content: center;
     margin-top: 15px;
 }
-.daily-Quote{
+.daily-quote{
     margin-top: 30px;
     width: 450px;
     height: 200px;
@@ -59,21 +59,22 @@ body{
 .Input ul{
     margin-top: 15px;
 }
-button{
+.createBtn{
     border: 1px solid #ffffff;
     background-color: #f9f6f6;
     padding: 8px;
     border-radius: 0px 10px 10px 0px;
 }
 .Input ul li{
+    display: flex;
+    flex-direction: row;
     width: 500px;
     height: 50px;
     list-style: none;
-    background-color: aqua;
     margin-bottom: 10px;
     padding:10px ;
 }
-button:hover{
+.createBtn:hover{
     background-color: #D1C1B1;
 }
 
@@ -85,4 +86,13 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.listContainer button{
+    background-color: #f0d7d7;
+    margin-left: 10px;
 }
