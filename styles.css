@@ -39,8 +39,6 @@ body{
     margin-left: 10%;
     margin-right: 30%;
     box-shadow: 5px 0px 0px 5px #D1C1B1;
-    opacity: 0;
-    transition: opacity 60s ease-in-out;
 }
 .Input{
     margin-top: 25px;
