@@ -86,7 +86,7 @@ body{
 }
 .listContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 }
 .listContainer button{

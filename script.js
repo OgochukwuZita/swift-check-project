@@ -38,47 +38,52 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  function renderTodo() {
+
+function renderTodo() {
     // Clear existing content in the todos container
     todoContainer.innerHTML = '';
-
+  
     Todo.forEach((task, index) => {
       const listItem = document.createElement('li');
       listItem.textContent = task;
-
+  
       const listBtns = document.createElement('div');
       listBtns.className = 'listBtns';
-
+  
       const editBtn = document.createElement('button');
       editBtn.type = 'button';
       editBtn.id = 'editBtn';
       editBtn.addEventListener('click', () => editItem(index));
-
+  
       const editIcon = document.createElement('img');
       editIcon.src = './assets/edit-solid-24.png';
       editIcon.alt = 'edit-icon';
-
+  
       editBtn.appendChild(editIcon);
-
+  
       const deleteBtn = document.createElement('button');
       deleteBtn.type = 'button';
       deleteBtn.id = 'deleteBtn';
       deleteBtn.addEventListener('click', () => deleteItem(index));
-
+  
       const deleteIcon = document.createElement('img');
       deleteIcon.src = './assets/trash-alt-regular-24.png';
       deleteIcon.alt = 'delete-icon';
-
+  
       deleteBtn.appendChild(deleteIcon);
-
+  
       listBtns.appendChild(editBtn);
       listBtns.appendChild(deleteBtn);
-
+  
       listItem.appendChild(listBtns);
+  
+      // Append each list item to the todos container
       todoContainer.appendChild(listItem);
+      // Add a line break after each list item
+      todoContainer.appendChild(document.createElement('br'));
     });
   }
-
+  
   function deleteItem(i) {
     Todo.splice(i, 1);
     localStorage.setItem('todoz', JSON.stringify(Todo));
@@ -97,3 +102,4 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initial rendering
   renderTodo();
 });
+
